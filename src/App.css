@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.positionSwitch {
+  background-color: rgba(255,255,255,0.6);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  height: 50px;
+  padding-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.board-wrapper {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (orientation: landscape) {
+  .board-wrapper {
+      width: 100vh;
+      height: 100vh;
   }
 }
+@media screen and (orientation: portrait) {
+  .board-wrapper {
+      width: 100vw;
+      height: 100vw;
+  }
+}
+
+  .board {
+      display: flex;
+      flex-wrap: wrap;
+      width: 86%;
+      height: 86%;
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      border: solid 2px rgb(41, 41, 41);
+  }
+
+
+    .square {
+        flex: 0 0 calc(100% / 8);
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-shadow: inset 0 0 0 1px rgb(41, 41, 41);
+    }
+    .light {
+        background-color: rgb(236 236 208);
+    }
+    .dark {
+        background-color: rgb(118 149 86);
+    }
+
+    .defend-capture::before, .defend-capture--safe::before, .attack-capture::before, .selected::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .defend-capture::before, .defend-capture--safe::before, .attack-capture::before{
+      clip-path: polygon(0 0, 0 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0);
+    }
+    .defend-capture::before{
+      background-color: rgb(0, 26, 255);
+    }
+    .defend-capture--safe::before {
+      background-color: rgb(38, 255, 38);
+    }
+    .attack-capture::before {
+      background-color: rgb(255, 0, 0);
+    }
+    .selected::after {
+      clip-path: polygon(0 0, 0 100%, 3% 100%, 3% 3%, 97% 3%, 97% 97%, 3% 97%, 3% 100%, 100% 100%, 100% 0);
+      background-color: #ffaf00;
+    }
+
+
+      .piece {
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+      .white {
+          filter: invert(1);
+      }
+
+      .king {
+          background-image: url(../src/img/king.svg);
+      }
+      .queen {
+          background-image: url(../src/img/queen.svg);
+      }
+      .bishop {
+          background-image: url(../src/img/bishop.svg);
+      }
+      .knight {
+          background-image: url(../src/img/knight.svg);
+      }
+      .rook {
+          background-image: url(../src/img/rook.svg);
+      }
+      .pawn {
+          background-image: url(../src/img/pawn.svg);
+      }
+      .king, .queen, .bishop, .knight, .rook, .pawn svg {
+          shape-rendering: geometricPrecision;
+      }
+      .king, .queen, .bishop, .knight, .rook, .pawn svg path {
+          stroke-linecap: round;
+      }
+
+
+      .defendCountContainer, .attackCountContainer {
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          height: 8%;
+          width: 70%;
+      }
+      .defendCountContainer {
+          bottom: 5%;
+      }
+      .attackCountContainer {
+          bottom: 16%;
+      }
+
+        .defendCount, .attackCount, .defendCount--empty, .attackCount--empty {
+            height: 100%;
+            border-radius: 50%;
+            aspect-ratio : 1 / 1;
+        }
+        .defendCount {
+            background-color: rgb(25, 0, 255);
+        }
+        .defendCount--empty {
+            background-color: rgb(107, 91, 249);
+        }
+        .attackCount {
+            background-color: rgb(255, 0, 0);
+        }
+        .attackCount--empty {
+            background-color: rgb(255, 86, 86);
+        }
