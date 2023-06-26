@@ -93,9 +93,9 @@ const Kholmov = [
     }
 
     //Capture styling
-    className += (defendCount != 0 && attackCount === 0 && piece !='' && piece === piece.toLowerCase()) ? " defend-capture--safe" : "";
-    className += (defendCount != 0 && attackCount !=0 && piece !='' && piece === piece.toLowerCase()) ? " defend-capture" : "";
-    className += (attackCount != 0 && piece !='' && piece === piece.toUpperCase()) ? " attack-capture" : "";
+    className += (defendCount !== 0 && attackCount === 0 && piece !=='' && piece === piece.toLowerCase()) ? " defend-capture--safe" : "";
+    className += (defendCount !== 0 && attackCount !==0 && piece !=='' && piece === piece.toLowerCase()) ? " defend-capture" : "";
+    className += (attackCount !== 0 && piece !=='' && piece === piece.toUpperCase()) ? " attack-capture" : "";
 
 
   return (
@@ -132,7 +132,7 @@ const Piece = ({ piece }) => {
     P: pawn,
   };
 
-  const color = piece.toLowerCase() === piece ? "black" : "white";
+  // const color = piece.toLowerCase() === piece ? "black" : "white";
   const isWhite = piece.toLowerCase() === piece ? false : true;
   const pieceChar = pieceMap[piece] || "";
 
@@ -143,6 +143,7 @@ const Piece = ({ piece }) => {
         <img
             className={isWhite ? "piece white" : "piece"}
             src={pieceChar}
+            alt={piece}
         >
         </img>
       ) : (
@@ -364,19 +365,19 @@ function App() {
     console.log("button clicked")
     console.log("BoardPosition: ", BoardPosition)
     let newBoard = [];
-    if (BoardPosition == "Initial") {
+    if (BoardPosition === "Initial") {
         newBoard = Magnus;
         BoardPosition = "Magnus (2018)"
-    } else if (BoardPosition == "Magnus (2018)") {
+    } else if (BoardPosition === "Magnus (2018)") {
         newBoard = Shirov;
         BoardPosition = "Shirov (1998)"
-    } else if (BoardPosition == "Shirov (1998)") {
+    } else if (BoardPosition === "Shirov (1998)") {
       newBoard = Geller;
       BoardPosition = "Geller (1949)"
-    } else if (BoardPosition == "Geller (1949)") {
+    } else if (BoardPosition === "Geller (1949)") {
       newBoard = Kholmov;
       BoardPosition = "Kholmov (1964)"
-    } else if (BoardPosition == "Kholmov (1964)") {
+    } else if (BoardPosition === "Kholmov (1964)") {
       newBoard = initialBoard;
       BoardPosition = "Initial"
     }
