@@ -7,13 +7,14 @@ You can try it out here: https://oxonomi.github.io/chess-helper--react/
 <img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%">
 </div>
 <br>
+
 Key:
-- a red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
-- blue dots shows where you are defending; where you can move a piece.
-- a red outline means your piece is under attack and can be taken.
-- a green outline on your opponents piece means you can take it freely.
-- a blue outline on your opponents piece means you can take it, but they can take your piece on their next move.
-- a yellow outline indicates you have clicked a piece to move it, clicking another square will move the selected piece.
+- Red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
+- Blue dots shows where you are defending; where you can move a piece.
+- Red outline means your piece is under attack and can be taken.
+- Green outline on your opponents piece means you can take it freely.
+- Blue outline on your opponents piece means you can take it, but they can take your piece on their next move.
+- Yellow outline indicates you have clicked a piece to move it, clicking another square will move the selected piece.
 - Pieces can move freely to any square (I did this so you can apply to the chess-learner to a pre-existing position without needing to play out every move)
 - Click the refresh icon in the top left of the page to cycle through famous chess positions.
 - This is not a fully built game, it is companion you can use to copy as you play a game on a dedicated chess platform (please only use this when playing against the computer, do not use against real players as it would be considered cheating).
