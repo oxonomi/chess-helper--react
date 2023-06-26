@@ -2,7 +2,8 @@ This Chess Helper app shows you all the possible moves for any given chess posit
 
 You can try it out here: https://oxonomi.github.io/chess-helper--react/
 
-![Screenshot](src/img/chess-learner-screenshot.png)
+<img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%">
+
 
 Key:
 - a red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
