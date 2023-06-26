@@ -1,9 +1,9 @@
 This Chess Helper app shows you all the possible moves for any given chess position, showing how many times each square is defended and under attack. It's designed to help new and experienced players, recognise blunders, visualise tactical exchanges, notice attacks and discover opportunities.
 
 You can try it out here: https://oxonomi.github.io/chess-helper--react/
-
-<img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%" margin="auto">
-
+<div align="center">
+<img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%">
+</div>
 
 Key:
 - a red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
