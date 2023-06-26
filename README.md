@@ -2,7 +2,7 @@ This Chess Helper app shows you all the possible moves for any given chess posit
 
 You can try it out here: https://oxonomi.github.io/chess-helper--react/
 
-
+![Screenshot](src/img/chess-learner-screenshot.png)
 
 Key:
 - a red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
@@ -16,7 +16,7 @@ Key:
 - This is not a fully built game, it is companion you can use to copy as you play a game on a dedicated chess platform (please only use this when playing against the computer, do not use against real players as it would be considered cheating).
 
 
-* a piece in chess typically refers to only the non-pawn units, but in my explanation I’ve used the word piece to include pawns as colloquial it reads easier for beginners. The correct term to refer to all pieces including pawns is 'unit'
+*a piece in chess typically refers to only the non-pawn units, but in my explanation I’ve used the word piece to include pawns as colloquial it reads easier for beginners. The correct term to refer to all pieces including pawns is 'unit'*
 
 
 
