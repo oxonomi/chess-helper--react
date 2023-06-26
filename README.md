@@ -1,10 +1,12 @@
+## Chess Helper
+
 This Chess Helper app shows you all the possible moves for any given chess position, showing how many times each square is defended and under attack. It's designed to help new and experienced players, recognise blunders, visualise tactical exchanges, notice attacks and discover opportunities.
 
 You can try it out here: https://oxonomi.github.io/chess-helper--react/
 <div align="center">
 <img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%">
 </div>
-
+<br>
 Key:
 - a red dot shows where your opponent is attacking; meaning the opponent can move a piece to that square, multiple red dots means they can move multiple pieces to that square.
 - blue dots shows where you are defending; where you can move a piece.
@@ -15,11 +17,12 @@ Key:
 - Pieces can move freely to any square (I did this so you can apply to the chess-learner to a pre-existing position without needing to play out every move)
 - Click the refresh icon in the top left of the page to cycle through famous chess positions.
 - This is not a fully built game, it is companion you can use to copy as you play a game on a dedicated chess platform (please only use this when playing against the computer, do not use against real players as it would be considered cheating).
-  
+
+<br><br>
   
 *a piece in chess typically refers to only the non-pawn units, but in my explanation I’ve used the word piece to include pawns as colloquial it reads easier for beginners. The correct term to refer to all pieces including pawns is 'unit'*
-  
-  
+
+<br><br>
   
 To-do
 - play as black
