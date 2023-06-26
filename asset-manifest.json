@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chess-helper--react/static/css/main.0dbdd7b7.css",
+    "main.js": "/chess-helper--react/static/js/main.21f7e21c.js",
+    "static/js/787.383302a6.chunk.js": "/chess-helper--react/static/js/787.383302a6.chunk.js",
+    "index.html": "/chess-helper--react/index.html",
+    "static/media/queen.svg": "/chess-helper--react/static/media/queen.c51fec524ae3a23b9ccf3b5612f477d5.svg",
+    "static/media/rook.svg": "/chess-helper--react/static/media/rook.45b34cf1174f0ff1b178977dc751674e.svg",
+    "static/media/knight.svg": "/chess-helper--react/static/media/knight.2d96af84007c5385f40e30d9dbe9bca4.svg",
+    "static/media/refresh.svg": "/chess-helper--react/static/media/refresh.31541675be44398c0a9228705c6f8152.svg",
+    "static/media/bishop.svg": "/chess-helper--react/static/media/bishop.9d58ad7de805eefa710a9b4d7025f1f1.svg",
+    "static/media/king.svg": "/chess-helper--react/static/media/king.e872917b72f2b057e4751089cfbd7fc1.svg",
+    "static/media/pawn.svg": "/chess-helper--react/static/media/pawn.44e2f1dff6921e0c4115444418bced64.svg",
+    "main.0dbdd7b7.css.map": "/chess-helper--react/static/css/main.0dbdd7b7.css.map",
+    "main.21f7e21c.js.map": "/chess-helper--react/static/js/main.21f7e21c.js.map",
+    "787.383302a6.chunk.js.map": "/chess-helper--react/static/js/787.383302a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dbdd7b7.css",
+    "static/js/main.21f7e21c.js"
+  ]
+}
