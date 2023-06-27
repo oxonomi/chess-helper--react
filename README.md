@@ -4,7 +4,7 @@ This Chess Helper app shows you all the possible moves for any given chess posit
 
 You can try it out here: https://oxonomi.github.io/chess-helper--react/
 <div align="center">
-<img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="50%">
+<img src="src/img/chess-learner-screenshot.png" alt="Screenshot" width="75%">
 </div>
 <br>
 
