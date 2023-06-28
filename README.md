@@ -24,8 +24,8 @@ Key:
 *a 'piece' in chess typically refers to only the non-pawn units, but in my explanation I’ve used the word piece to include pawns as colloquial it reads easier for beginners. The correct term to refer to all pieces including pawns is 'unit'*
 
 <br><br>
-  
-To-do
+
+Future updates:
 - play as black
 - add an undo/redo feature
 - create off-board area for won/lost pieces
